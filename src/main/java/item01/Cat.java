@@ -5,3 +5,6 @@ package item01;
 ////        super(); // 에러?!
 ////    }
 //}
+public class Cat {
+    private Animal animal;
+}
