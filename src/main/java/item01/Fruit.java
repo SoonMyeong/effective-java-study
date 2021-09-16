@@ -4,4 +4,5 @@ public class Fruit {
     public static Apple createApple() {
         return new Apple();
     }
+
 }

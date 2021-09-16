@@ -1,7 +1,4 @@
-import item01.Apple;
-import item01.Dog;
-import item01.Fruit;
-import item01.Member;
+import item01.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -35,6 +32,11 @@ public class Item01 {
         assertEquals(Fruit.createApple().getClass(),Apple.class);
     }
 
+
+    @Test
+    void test() {
+        assertNotSame(Elvis.INSTANCE,Elvis.INSTANCE2);
+    }
 
 
 }
