@@ -33,10 +33,10 @@ public class Item01 {
     }
 
 
-    @Test
-    void test() {
-        assertNotSame(Elvis.INSTANCE,Elvis.INSTANCE2);
-    }
+//    @Test
+//    void test() {
+//        assertNotSame(Elvis.INSTANCE,Elvis.INSTANCE2);
+//    }
 
 
 }
