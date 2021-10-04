@@ -36,7 +36,7 @@ public class Item13 {
         assertNotEquals(c1.getName(),c.getName());
     }
 
-    @DisplayName("가변 상태를 참조하는 클래스용 clone 메서드 작성 시")
+    @DisplayName("가변 상태를 참조하는 클래스용 clone 메서드 작성 시 (재귀적으로 호출)")
     @Test
     void test03() throws CloneNotSupportedException {
         String[] test = {"a","b","c"};
@@ -80,6 +80,14 @@ public class Item13 {
         cloneHash.print();
     }
 
-
+    @DisplayName("복사 생성자 소개")
+    @Test
+    void test06() {
+        Soon soon = new Soon(31,"SoonWorld");
+        Soon soon1 = new Soon(soon);
+        soon1.setAge(20);
+        System.out.println(soon.toString());
+        System.out.println(soon1.toString());
+    }
 
 }
