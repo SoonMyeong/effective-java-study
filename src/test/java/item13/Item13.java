@@ -20,7 +20,7 @@ public class Item13 {
 
 
         assertSame(a,b); //b 클래스를 복제했음에도 내부적으로 super.clone 에 의해 item13.A 클래스와 같게 되버린다.
-        Assertions.assertEquals(b.getCompany(),b1.getCompany());
+        assertEquals(b.getCompany(),b1.getCompany());
     }
 
     @DisplayName("상속관계가 아닌 경우 기존 cloneable 을 구현했을 때")
